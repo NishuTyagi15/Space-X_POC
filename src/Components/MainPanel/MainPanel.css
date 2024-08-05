@@ -1,0 +1,47 @@
+.dashboard-items {
+    display: flex;
+    flex-flow: wrap;
+    place-content: flex-start center;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 5rem 12px 0px;
+    padding: 0px;
+}
+
+.lists {
+    padding: 0.5rem 0px;
+    margin-left: -1rem;
+}
+
+.nav-options {
+    transition: all 0.2s ease-out 0s;
+    text-decoration: none;
+    font-weight: 100;
+    color: rgb(101, 101, 101);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+.active {
+    font-weight: 500;
+    color: rgb(53, 53, 53);
+}
+
+.item-1 {
+    margin: 12px 25px 0px 0px;
+}
+
+.item-2 {
+    margin: 12px 0px 0px 0px;
+}
+
+.upcoming-rocket {
+    height: 302px;
+}
+
+.previous-rocket {
+    height: 268px;
+}

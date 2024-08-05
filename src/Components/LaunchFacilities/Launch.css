@@ -1,0 +1,72 @@
+.base-1 {
+    justify-content: space-between;
+    padding: 15px;
+    background-image: url('../../Images/base-1.jpg');
+    min-width: -webkit-fill-available;
+    background-size: cover;
+    background-position: center;
+    height: 80px;
+    border-radius: 15px;
+    font-family: HelveticaNeue, sans-serif !important;
+}
+
+.cape-canaveral {
+    margin: 6px 0px 0px 0px;
+}
+
+.base-2 {
+    background-image: url('../../Images/base-2.jpg') !important;
+}
+
+.base-3 {
+    background-image: url('../../Images/base-3.jpg') !important;
+}
+
+.launch-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.base-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.transparent-font {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.74rem;
+    font-weight: 600;
+}
+
+.normal-font {
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: 600
+}
+
+.spacex-logo {
+    margin: 4rem 0rem 0rem 0.7rem;
+    min-height: 43px;
+    max-width: 174px;
+}
+
+.more-less {
+    margin: -3px 360px 0px 0px;
+}
+
+.more > svg {
+    margin-bottom: -4px;
+    transform: rotate(90deg);
+}
+
+.less > svg {
+    margin-bottom: -4px;
+    transform: rotate(-90deg);
+}
+
+.launch-facility {
+    margin: -2px 0px 0px 0px;
+    font-size: 22px;
+}

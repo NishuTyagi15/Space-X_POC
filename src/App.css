@@ -1,0 +1,86 @@
+.App {
+  display: flex;
+  padding: 40px;
+  font-family: HelveticaNeue, sans-serif !important;
+  background: rgb(239, 239, 239);
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #1b1b1b;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  height: 100vh;
+}
+
+.main-content {
+  padding: 20px;
+  flex-grow: 1;
+  margin-left: 200px;
+  background-size: cover;
+}
+
+.launch-info img {
+  width: 100px;
+  height: 100px;
+}
+
+.paper-item {
+  border-radius: 15px !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  position: relative;
+  z-index: 2;
+  padding: 25px !important;
+  width: 420px;
+}
+
+.main-container {
+  width: 100%;
+  background-image: url('./Images/spacex-theme-background.jpg');
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+
+.Box-Container {
+  width: 100%;
+  height: 630px;
+  display: flex;
+}
+
+.grid-content {
+  color: white;
+  z-index: 3;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-flow: column;
+}
+
+.dashboard {
+  font-weight: 500;
+  color: rgb(53, 53, 53);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.justify-space {
+  justify-content: space-between;
+}
+
+.align-end {
+  align-items: end;
+}
+
+.gap {
+  gap: 25px;
+}
