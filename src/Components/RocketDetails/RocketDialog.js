@@ -37,7 +37,13 @@ function RocketDialog({ open, handleClose, rocketData }) {
             padding: '16px 24px',
         },
         dialogTitleData: {
-           
+            flexFlow: 'row',
+            placeContent: 'normal',
+            alignItems: 'center',
+            display: 'flex',
+            margin: '0px',
+            padding: '0px',
+            fontSize: '1.5rem',
         },
         closeButton: {
             position: 'absolute',
@@ -73,24 +79,27 @@ function RocketDialog({ open, handleClose, rocketData }) {
         },
         tabs: {
         },
+        tab1: {
+            textTransform: 'none',
+            transition: 'background 0.2s ease-out 0s',
+            fontWeight: '300',
+            color: 'rgb(53, 53, 53)',
+            cursor: 'pointer',
+            borderRadius: '10px',
+            margin: '0px',
+            padding: '0.25rem 0.8rem',
+            fontSize: '1.5rem'
+        }
     };
 
     return (
         <Dialog style={styles.dialogMain} open={open} onClose={handleClose} maxWidth="md" fullWidth>
             <DialogTitle style={styles.dialogTitle}>
                 <h2 style={styles.dialogTitleData}>{rocketData.name}</h2>
-                <ul className='nav-list' style={styles.listOptions}>
-                    <li style={styles.overview} onChange={handleChange}>
-                        Overview
-                    </li>
-                    <li style={styles.photos} onChange={handleChange}>
-                        Photos
-                    </li>
-                </ul>
-                {/* <Tabs value={value} onChange={handleChange} style={styles.tabs}>
-                    <Tab label="Overview" />
-                    <Tab label="Photos" />
-                </Tabs> */}
+                <Tabs value={value} onChange={handleChange} style={styles.tabs}>
+                    <Tab style={styles.tab1} label="Overview" />
+                    <Tab style={styles.tab1} label="Photos" />
+                </Tabs>
                 <IconButton onClick={handleIconClick} style={styles.closeButton}>
                     <CloseIcon />
                 </IconButton>
