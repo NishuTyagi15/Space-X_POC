@@ -20,7 +20,7 @@ const LaunchInfo = ({ title, missionName, rocket, flightNumber, launchDate, link
                         <span className='normal-font'>{flightNumber}</span>
                     </p>
                     <p className='flex transparent-font'>TIME(UTC)
-                        <span className='normal-font'>{launchDate || formatDateTime(launchDate)}</span>
+                        <span className='normal-font'>{formatDateTime(launchDate)}</span>
                     </p>
                     <p className='flex transparent-font'>LINKS
                         <div className='flex-row s-links'>

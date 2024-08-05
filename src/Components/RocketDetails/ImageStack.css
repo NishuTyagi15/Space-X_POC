@@ -36,6 +36,10 @@
     left: 0;
 }
 
+.left-arrow > svg {
+    transform: rotateY(180deg);
+}
+
 .right-arrow {
     right: 0;
 }

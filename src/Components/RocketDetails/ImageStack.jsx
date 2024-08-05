@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './ImageStack.css'; // Assuming you are using CSS for styling
-import { nextIcon, prevIcon } from '../../Images/Icons';
+import { prevnextIcon } from '../../Images/Icons';
 
 const ImageStack = ({ images }) => {
     console.log("nish images", images)
@@ -21,13 +21,13 @@ const ImageStack = ({ images }) => {
   return (
     <div className="carousel-container">
       <button className="arrow left-arrow" onClick={handlePrevClick}>
-        {prevIcon}
+        {prevnextIcon}
       </button>
       <div className="image-container">
         <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} />
       </div>
       <button className="arrow right-arrow" onClick={handleNextClick}>
-        {nextIcon}
+        {prevnextIcon}
       </button>
     </div>
   );
