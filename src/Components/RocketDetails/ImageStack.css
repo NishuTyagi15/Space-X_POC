@@ -1,0 +1,41 @@
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.image-container {
+    display: flex;
+    place-content: center;
+    margin: 5px;    
+
+}
+
+.image-container img {
+    box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 45px 5px;
+    border-radius: 15px;
+    max-width: 80%;
+}
+
+.arrow {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.right-arrow {
+    right: 0;
+}

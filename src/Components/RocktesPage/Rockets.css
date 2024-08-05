@@ -1,5 +1,7 @@
 .rocket-main-content {
     padding: 70px;
+    display: flex;
+    place-content: flex-start center;
 }
 
 .rocket-stack {

@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { FETCH_ROCKETS_DETAILS, PREVIOUS_LAUNCH_DETAILS, UPCOMING_LAUNCH_DETAILS } from '../Constants/constants';
+import { DIALOG_STATE, FETCH_ROCKETS_DETAILS, PREVIOUS_LAUNCH_DETAILS, UPCOMING_LAUNCH_DETAILS } from '../Constants/constants';
 
 //function to fetch the upcoming launch details from the upcoming space-x api
 export const upcomingLaunch = () => async(dispatch) => {
@@ -52,9 +52,18 @@ export const fetchRocketsDetails = () => async(dispatch) => {
     }
 }
 
+// function to dispatch the action to store rocket details with images
 export const rocketsDetails = (data)  => (dispatch) => {
     dispatch({
         type: FETCH_ROCKETS_DETAILS,
         payload: data
+    })
+}
+
+// function to dispatch the action to store dialogstate
+export const dialogState = (state) => (dispatch) => {
+    dispatch({
+        type: DIALOG_STATE,
+        payload: state
     })
 }

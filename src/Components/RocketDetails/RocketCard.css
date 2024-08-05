@@ -53,11 +53,11 @@
 
 .status-active {
     background-color: rgba(29, 143, 36, 0.4);
+    margin: 0px 60px 0px 0px;
 }
 
 .status-development {
     background-color: rgba(255, 179, 3, 0.4);
-    margin: 4px -50px 4px 0px !important;
 }
 
 .status {

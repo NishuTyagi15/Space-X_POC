@@ -6,17 +6,16 @@ import { connect } from 'react-redux';
 import { fetchRocketsDetails } from '../Actions/action';
 
 const Rockets = (props) => {
-
   useEffect(() => {
-    props.fetchRocketsDetails()
-  }, [])
+    props.fetchRocketsDetails();
+  }, []);
 
   return (
     <div className='rocket-main-content'>
       <div className='paper-item rocket-stack'>
         <div className='flex-row'>
           {props.rocketsDetails?.length > 0 && props.rocketsDetails.map((rocket) => (
-            <RocketCard rocketData={rocket} />
+            <RocketCard key={rocket.id} rocketData={rocket} />
           ))}
         </div>
       </div>
@@ -24,17 +23,12 @@ const Rockets = (props) => {
   );
 }
 
-const mapStateToProps = (state) => {
-  return {
-    rocketsDetails: state.rocketsDetails,
-  };
-}
+const mapStateToProps = (state) => ({
+  rocketsDetails: state.rocketsDetails,
+});
 
 const mapDispatchToProps = {
-  fetchRocketsDetails: fetchRocketsDetails
-}
+  fetchRocketsDetails,
+};
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Rockets);
+export default connect(mapStateToProps, mapDispatchToProps)(Rockets);

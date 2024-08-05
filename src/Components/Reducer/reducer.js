@@ -1,9 +1,10 @@
-import { FETCH_ROCKETS_DETAILS, PREVIOUS_LAUNCH_DETAILS, UPCOMING_LAUNCH_DETAILS } from "../Constants/constants"
+import { DIALOG_STATE, FETCH_ROCKETS_DETAILS, PREVIOUS_LAUNCH_DETAILS, UPCOMING_LAUNCH_DETAILS } from "../Constants/constants"
 
 const initialState = {
     upcomingLaunchDetails: [],
-    previousLaunchDetails: []
-
+    previousLaunchDetails: [],
+    rocketsDetails: [],
+    closeDialogState: false
 }
 
 /* eslint-disable-next-line */
@@ -23,6 +24,11 @@ export const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 rocketsDetails: action.payload
+            }
+        case DIALOG_STATE:
+            return {
+                ...state,
+                dialogOpenState: action.payload
             }
         default:
             return state;
