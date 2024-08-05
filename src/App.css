@@ -40,6 +40,7 @@
   background-image: url('./Images/spacex-theme-background.jpg');
   overflow-y: scroll;
   overflow-x: auto;
+  background-position: center;
 }
 
 .Box-Container {

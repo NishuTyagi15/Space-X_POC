@@ -5,3 +5,17 @@
     font-weight: 600;
     font-family: HelveticaNeue, sans-serif !important;
 }
+
+.starlink-icon {
+    margin: 27px 0px 0px 0px;
+}
+
+.blinking-light {
+    animation: 2s ease 0s infinite normal none running blink;
+}
+
+@keyframes blink {
+    100% {
+        fill: rgba(255, 255, 255, 0);
+    }
+}

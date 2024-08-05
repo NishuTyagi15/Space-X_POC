@@ -1,4 +1,4 @@
-import { PREVIOUS_LAUNCH_DETAILS, UPCOMING_LAUNCH_DETAILS } from "../Constants/constants"
+import { FETCH_ROCKETS_DETAILS, PREVIOUS_LAUNCH_DETAILS, UPCOMING_LAUNCH_DETAILS } from "../Constants/constants"
 
 const initialState = {
     upcomingLaunchDetails: [],
@@ -19,7 +19,11 @@ export const reducer = (state = initialState, action) => {
                 ...state,
                 previousLaunchDetails: action.payload
             }
-
+        case FETCH_ROCKETS_DETAILS:
+            return {
+                ...state,
+                rocketsDetails: action.payload
+            }
         default:
             return state;
     }

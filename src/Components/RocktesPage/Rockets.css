@@ -1,15 +1,9 @@
-.rocket-grid {
+.rocket-main-content {
     padding: 70px;
 }
 
 .rocket-stack {
     margin-top: -70px;
     width: 820px !important;
-    height: 360px;
-}
-
-.rocket-image {
-    color: red;
-    height: 200px;
-    width: 300px;
+    height: 430px;
 }

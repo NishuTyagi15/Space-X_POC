@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { Grid, Paper } from '@mui/material';
+import { Paper } from '@mui/material';
 import LaunchInfo from '../LaunchDetails/LaunchInfo';
 import LaunchFacilities from '../LaunchFacilities/LaunchFacilities';
 import "../../App.css";
@@ -14,7 +14,7 @@ const Dashboard = (props) => {
     }, []);
 
     // console.log("props.upcomingLaunchDetails", props.upcomingLaunchDetails)
-    // console.log("props.previousLaunchDetails", props.previousLaunchDetails)
+    console.log("props.previousLaunchDetails", props.previousLaunchDetails)
 
     return (
         <div className='dashboard-items'>
@@ -38,7 +38,7 @@ const Dashboard = (props) => {
                         flightNumber={props.previousLaunchDetails?.flight_number || "23245575"}
                         launchDate={props.previousLaunchDetails?.launch_date_utc || "Nov 01, 01:41 PM"}
                         links={props.previousLaunchDetails?.links || null}
-                        launchpad={props.previousLaunchDetails?.launch_site?.site_name || "sitename"}
+                        launchpad={props.previousLaunchDetails?.crew || "none"}
                     />
                 </Paper>
             </div>
