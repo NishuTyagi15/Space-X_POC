@@ -43,7 +43,7 @@ const Dashboard = (props) => {
                 </Paper>
             </div>
             <div className='flex gap item-2'>
-                <Paper className='paper-item' elevation={3} sx={{ padding: 2 }}>
+                <Paper className='paper-item launch-facilities-stack' elevation={3} sx={{ padding: 2 }}>
                     <LaunchFacilities />
                 </Paper>
                 <Paper className='paper-item' elevation={3} sx={{ padding: 2 }}>
